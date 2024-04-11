@@ -10,4 +10,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class EpisodesComponent {
 
+  constructor(){ }
+
+  ngOnInit(): void{
+
+  }
+
+  action(){
+    console.log("ghoksda");
+  }
 }

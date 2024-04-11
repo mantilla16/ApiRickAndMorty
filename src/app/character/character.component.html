@@ -11,7 +11,9 @@
 
     <main>
         <div class="flayer">
-            <h1>THE RICK AND MORTY API</h1>
+            <div class="name">
+                <h1>THE RICK AND MORTY API</h1>
+            </div>
         </div>
 
         <div class="search-container">
@@ -33,6 +35,10 @@
                 </div>
                 }
         </div>
+           <div class="pagination">
+            <a class="btn-image2" (click)="previousPage()"></a>
+            <a class="btn-image" (click)="nextPage()"></a>
+           </div>
     </main>
 
 </body>

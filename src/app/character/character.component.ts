@@ -13,21 +13,40 @@ import { CharacterInterface } from '../interface/character.interface';
 })
 export class CharacterComponent implements OnInit{
 
+ 
+
   characterList: CharacterInterface[] = [];
+  currentPage = 1;
   constructor(private apiService: ApirickService ){}
 
   ngOnInit(): void {
     this.getCharacter();
   }
-
+  
   getCharacter(){
-    this.apiService.getCharacters().subscribe({
+    this.apiService.getCharacters(this.currentPage).subscribe({
       next: (result)=>{
         this.characterList = result.results;
       },
       error:(err)=>{
         console.log(err);
       }
-    })
+    });
   }
+
+  nextPage(){
+    this.currentPage++;
+    this.getCharacter();
+    console.log(this.currentPage);
+    
+  }
+
+  previousPage(){
+    if(this.currentPage > 1){
+      this.currentPage--;
+      this.getCharacter();
+    }
+  }
+
+  
 }

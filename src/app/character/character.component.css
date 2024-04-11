@@ -1,75 +1,113 @@
-  .flayer{    
-        width:100%;
-        height:250px;
-        background-image: url(../../assets/flayer.jpeg);
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center center;
-        text-align: center;
-        color: white;
-  }
+/* margin-top: -21.5px;
+margin-right: -21.5px;
+margin-bottom: -21.5px;
+margin-left: -21.5px; */
+.flayer {
+    margin: -21.4px 21.5px -2px;
+  width: 100%;
+  height: 250px;
+  background-image: url(../../assets/flayer.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: white;
+}
 
-  h1{
-    padding: 9%;
-    margin:0;
-  }
+h1 {
+  padding: 9%;
+  /* margin: 0; */
+}
 
-  
-  .search-container {
-    width: 500px; 
-    height: 20px; 
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-top: -16px;
+.search-container {
+  width: 350px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: -16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23424242" width="24px" height="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
 }
 
 .search-container input[type="text"] {
-    border: 1px;
-    padding: 10px;
-    font-size: 16px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23424242" width="24px" height="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    padding-left: 35px; 
+  border: 1px;
+  padding: 2.5% 50% 2.5% 0%;
+  font-size: 16px;
+
+  
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .card {
-    display: flex;
-    align-items: center;
-    width: 340px;
-    height: 150px; 
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #3C3E43;
-    border-radius: 10px;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 150px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #3c3e43;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .card img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 5px;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
 }
 
 .card-info {
-    text-align: left;
-} 
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-image{
+  margin-left: 15px;
+  width: 20px;
+  height: 50px;
+  border: none;
+  background: center;
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+  padding-right: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>');
+}
+
+.btn-image2{
+    
+    width: 20px;
+    height: 50px;
+    border: none;
+    background: center;
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    padding-right: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>');
+  }
 
 main {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }

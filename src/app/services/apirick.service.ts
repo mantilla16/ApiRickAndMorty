@@ -9,7 +9,7 @@ export class ApirickService {
   api_url: string = 'https://rickandmortyapi.com/api/character';
   constructor(private httpClient: HttpClient) { }
   
-  getCharacters(): Observable<any> {
-    return this.httpClient.get(this.api_url).pipe(res=> res);
+  getCharacters(page: number): Observable<any> {
+    return this.httpClient.get(`${this.api_url}/?page=${page}`).pipe(res=> res);
   }
 }
